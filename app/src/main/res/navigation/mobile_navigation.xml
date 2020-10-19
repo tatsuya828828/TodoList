@@ -6,20 +6,20 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.kuma.todolist.ui.home.HomeFragment"
+        android:id="@+id/navigation_todo"
+        android:name="com.kuma.todolist.ui.todo.TodoFragment"
         android:label="@string/title_todo"
         tools:layout="@layout/fragment_todo" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.kuma.todolist.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_plan"
+        android:name="com.kuma.todolist.ui.plan.PlanFragment"
         android:label="@string/title_plan"
         tools:layout="@layout/fragment_plan" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.kuma.todolist.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_history"
+        android:name="com.kuma.todolist.ui.hisotry.HistoryFragment"
         android:label="@string/title_history"
         tools:layout="@layout/fragment_history" />
 </navigation>
