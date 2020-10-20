@@ -7,7 +7,7 @@
     tools:context=".ui.todo.TodoFragment">
 
     <TextView
-        android:id="@+id/test_text"
+        android:id="@+id/text_todo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -16,17 +16,17 @@
         android:hint="入力してください"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/test_button"
+        app:layout_constraintEnd_toStartOf="@+id/todo_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/test_button"
+        android:id="@+id/todo_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@+id/test_text"
+        app:layout_constraintBottom_toBottomOf="@+id/text_todo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/test_text" />
+        app:layout_constraintTop_toTopOf="@+id/text_todo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
