@@ -1,4 +1,4 @@
-package com.kuma.todolist.ui.notifications;
+package com.kuma.todolist.ui.history;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.kuma.todolist.R;
 
-public class NotificationsFragment extends Fragment {
+public class HistoryFragment extends Fragment {
 
-    private NotificationsViewModel notificationsViewModel;
+    private HistoryViewModel historyViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+        historyViewModel =
+                new ViewModelProvider(this).get(HistoryViewModel.class);
         View root = inflater.inflate(R.layout.fragment_history, container, false);
-        final TextView textView = root.findViewById(R.id.text_notifications);
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = root.findViewById(R.id.text_history);
+        historyViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
