@@ -6,11 +6,11 @@ import androidx.lifecycle.ViewModel;
 
 public class TodoViewModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
+    private final MutableLiveData<String> mText;
 
     public TodoViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is todo fragment");
     }
 
     public LiveData<String> getText() {
